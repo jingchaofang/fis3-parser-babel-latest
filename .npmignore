@@ -11,4 +11,6 @@ coverage
 .DS_Store
 jest.config.js
 *.md
-
+rollup.config.js
+webpack.config.js
+LICENSE

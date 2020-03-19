@@ -1,8 +1,12 @@
-# 项目核心部分
+# 测试用例说明test
 
+## vue-jsx.spec.js
 
+npm install --save-dev jest
 
-# 构建部分build
+搬砖自https://github.com/vuejs/babel-plugin-transform-vue-jsx/blob/master/test/test.js
+
+# 构建部分说明build
 
 ## rollup library
 

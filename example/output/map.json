@@ -1,0 +1,44 @@
+{
+    "res": {
+        "index.js": {
+            "uri": "/index.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "index"
+            },
+            "deps": [
+                "node_modules/vue/dist/vue.runtime.common.js"
+            ]
+        },
+        "mod.js": {
+            "uri": "/mod.js",
+            "type": "js"
+        },
+        "node_modules/vue/dist/vue.runtime.common.js": {
+            "uri": "/node_modules/vue/dist/vue.runtime.common.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "node_modules/vue/dist/vue.runtime.common"
+            },
+            "deps": [
+                "node_modules/vue/dist/vue.runtime.common.prod.js",
+                "node_modules/vue/dist/vue.runtime.common.dev.js"
+            ]
+        },
+        "node_modules/vue/dist/vue.runtime.common.prod.js": {
+            "uri": "/node_modules/vue/dist/vue.runtime.common.prod.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "node_modules/vue/dist/vue.runtime.common.prod"
+            }
+        },
+        "node_modules/vue/dist/vue.runtime.common.dev.js": {
+            "uri": "/node_modules/vue/dist/vue.runtime.common.dev.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "node_modules/vue/dist/vue.runtime.common.dev"
+            }
+        }
+    },
+    "pkg": {}
+}
