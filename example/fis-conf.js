@@ -29,6 +29,7 @@ fis.match('**.js', {
                 }],
                 ['@vue/babel-preset-jsx'],
             ];
+            conf.sourceMaps = true;
             return parserBabelPlugin(content, file, conf);
         },
     ]

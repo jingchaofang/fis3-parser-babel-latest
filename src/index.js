@@ -25,6 +25,8 @@ export default function transform(content, file, conf) {
     const result = babel.transform(content, conf);
 
     // 添加resourcemap输出
+    // 推荐babel设置conf.sourceMaps = true，只导出result.map然后我们作如下处理
+    // https://babeljs.io/docs/en/next/options#sourcemaps
     if (result.map) {
         const mapping = fis.file.wrap(`${file.dirname}/${file.filename}${file.rExt}.map`);
         mapping.setContent(JSON.stringify(result.map, null, 4));

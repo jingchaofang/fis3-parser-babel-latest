@@ -17,5 +17,7 @@ define('index', function(require, exports, module) {
       return h("div", [this.message]);
     }
   });
+  //# sourceMappingURL=/index.js.map
+  
 
 });
