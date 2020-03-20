@@ -173,7 +173,8 @@ describe('babel-plugin-transform-vue-jsx', () => {
         expect(vnode.data.props.innerHTML).toEqual(2)
         expect(vnode.data.class).toEqual(['a', 'b', { c: true }])
         // merge handlers properly for on
-        vnode.data.on.click()
+        vnode.data.on.click[0]()
+        vnode.data.on.click[1]()
         expect(calls).toEqual([1, 2])
         // merge hooks properly
         vnode.data.hook.insert()
@@ -203,7 +204,7 @@ describe('babel-plugin-transform-vue-jsx', () => {
             <div class="a" {...{ class: 'b' }} />
         ))
 
-        expect(vnode.data.class).toEqual({ a: true, b: true })
+        expect(vnode.data.class).toEqual(['a', 'b'])
     })
 
     test('h injection in object methods', () => {
